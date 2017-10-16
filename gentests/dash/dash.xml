@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" profiles="urn:mpeg:dash:profile:full:2011" minBufferTime="PT1.5S">
+    <Period duration="PT5M">
+        <BaseURL>main/</BaseURL>
+        <AdaptationSet mimeType="video/mp2t">
+            <BaseURL>video/</BaseURL>
+            <Representation id="720p" bandwidth="3200000" width="1280" height="720">
+                <BaseURL>720p/</BaseURL>
+                <SegmentList timescale="90000" duration="5400000">
+                    <RepresentationIndex sourceURL="representation-index.sidx"/>
+                    <SegmentURL media="segment-1.ts"/>
+                    <SegmentURL media="segment-2.ts"/>
+                    <SegmentURL media="segment-3.ts"/>
+                    <SegmentURL media="segment-4.ts"/>
+                    <SegmentURL media="segment-5.ts"/>
+                    <SegmentURL media="segment-6.ts"/>
+                    <SegmentURL media="segment-7.ts"/>
+                    <SegmentURL media="segment-8.ts"/>
+                    <SegmentURL media="segment-9.ts"/>
+                    <SegmentURL media="segment-10.ts"/>
+                </SegmentList>
+            </Representation>
+        </AdaptationSet>
+    </Period>
+</MPD>
